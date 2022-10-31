@@ -10,7 +10,11 @@ const Stack = createNativeStackNavigator()
 const PublicNavigation = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Welcome" component={WelcomePage} />
+            <Stack.Screen 
+              options={{
+                headerShown: false
+              }}
+              name="Welcome" component={WelcomePage} />
             <Stack.Screen name="Login" component={LoginPage} />
             <Stack.Screen name="Register" component={RegisterPage} />
         </Stack.Navigator>

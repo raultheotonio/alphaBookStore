@@ -19,7 +19,4 @@ export const styles = StyleSheet.create({
     buttonWhiteColor: {
         backgroundColor: '#FFFF', 
     },
-    textColor: {
-        color: '#FFF'
-    }
 })

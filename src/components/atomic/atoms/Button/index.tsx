@@ -13,10 +13,12 @@ export const Button = ({ text, color, backgroundColor }:IProps) => {
         
     return (
         <TouchableOpacity 
+            activeOpacity={.7}
             style={{...styles.container, ...getColorButton}}
             onPress={()=>{}}
         >
-           <Text style={{color}}>{text}</Text>
+        
+            <Text style={{color: color, fontFamily: 'Poppins-Regular'}}>{text}</Text>
         </TouchableOpacity>
     )
 }
