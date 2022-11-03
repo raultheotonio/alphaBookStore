@@ -4,7 +4,7 @@ import  HomePage from '../../pages/home'
 
 const Tab = createBottomTabNavigator();
 
-const privateNavigation = () => {
+const PrivateNavigation = () => {
 
   return (
       <Tab.Navigator>
@@ -13,4 +13,4 @@ const privateNavigation = () => {
   );
 }
 
-export default privateNavigation;
+export default PrivateNavigation;

@@ -12,8 +12,8 @@ function Router() {
       <Stack.Navigator screenOptions={{
         headerShown: false
       }}>
-        <Stack.Screen name="PublicNavigation" component={PublicNavigation} />
-        <Stack.Screen name="PrivateNavigation" component={PrivateNavigation} />
+        <Stack.Screen name="publicNavigation" component={PublicNavigation} />
+        <Stack.Screen name="privateNavigation" component={PrivateNavigation} />
       </Stack.Navigator>
     </NavigationContainer>
   );

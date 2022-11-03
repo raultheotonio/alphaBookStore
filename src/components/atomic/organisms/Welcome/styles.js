@@ -1,13 +1,12 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-
     apresentationContainer: {
         paddingVertical: 55
     },
     logo: {
         alignSelf: 'center'
-    },  
+    },
     title: {
         fontFamily: 'Poppins-Bold',
         color: 'white',

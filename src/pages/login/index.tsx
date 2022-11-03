@@ -1,9 +1,13 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { View } from 'react-native'
+import Login from '../../components/atomic/organisms/Login'
+import { styles } from './styles'
 
 const LoginPage = () => {
     return (
-        <Text>Tela de Login</Text>
+        <View style={styles.container}>
+            <Login/>
+        </View>
     )
 }
 

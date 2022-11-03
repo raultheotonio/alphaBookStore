@@ -15,8 +15,16 @@ const PublicNavigation = () => {
                 headerShown: false
               }}
               name="Welcome" component={WelcomePage} />
-            <Stack.Screen name="Login" component={LoginPage} />
-            <Stack.Screen name="Register" component={RegisterPage} />
+            <Stack.Screen               
+              options={{
+                headerShown: false
+              }} 
+              name="Login" component={LoginPage} />
+            <Stack.Screen               
+              options={{
+                headerShown: false
+              }} 
+              name="Register" component={RegisterPage} />
         </Stack.Navigator>
     )
 }
