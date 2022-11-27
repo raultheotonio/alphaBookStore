@@ -1,26 +1,15 @@
-import React, {useState} from 'react'
-import { Image, KeyboardAvoidingView, } from 'react-native'
+import React from 'react'
+import { KeyboardAvoidingView, } from 'react-native'
 
-import { styles } from './styles'
 import { LoginForm } from '../../molecules/LoginForm'
+import Logo from '../../atoms/Logo'
 
 const Login = () => {
 
-    const Logo = () => {
-
-        return (
-            <Image 
-                style={styles.logo}
-                source={require('../../../../../assets/image/logoRed.png')} 
-            />
-        )
-    }
-
-
-
     return (
         <KeyboardAvoidingView behavior="padding">
-            {Logo()}
+            <Logo type="red" />
+
             <LoginForm/>
         </KeyboardAvoidingView>
     )

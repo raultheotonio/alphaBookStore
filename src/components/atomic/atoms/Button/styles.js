@@ -9,14 +9,18 @@ export const styles = StyleSheet.create({
        paddingVertical: 12,
        marginBottom: 16,
        borderRadius: 10,
-       
     },
     buttonRedColor: {
         backgroundColor: '#EB5757',
+        color: '#FFF',
         borderWidth: 2,
-        borderColor: '#FFFF' 
+        borderColor: '#FFFF',
+    },
+    text: {
+        fontFamily: 'Poppins-Regular',
+        color: '#FFF',
     },
     buttonWhiteColor: {
-        backgroundColor: '#FFFF', 
+        backgroundColor: '#FFFF',
     },
 })

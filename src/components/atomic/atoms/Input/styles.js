@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    inputContainer: {
+    container: {
         flexDirection: 'row',
         borderColor: '#8E8E93',
         borderWidth: 1,
@@ -17,12 +17,5 @@ export const styles = StyleSheet.create({
         width: '10%',        
         justifyContent: 'center',
         alignItems: 'center'
-    },
-    label:{
-        fontFamily: 'Poppins-Bold',
-    },
-    link: {
-        flexDirection: 'row',
-        justifyContent: 'center'
     }
 })

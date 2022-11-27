@@ -1,17 +1,20 @@
 import React from 'react'
 import { Image } from 'react-native'
 import { styles } from './styles'
-import { logo } from '../../../../../assets'
+import logoWhite from '../../../../../assets/image/logoWhite.png'
+import logoRed from '../../../../../assets/image/logoRed.png'
 
 interface IProps {
-    source: string
+    type: 'white' | 'red'
 }
 
-const Logo = ({ source }:IProps) => {
+const Logo = ({ type }:IProps) => {
+
+    const getTypeImage = type === 'white' ? logoWhite : logoRed
 
     return <Image 
         style={styles.logo}
-        source={require(logo)} 
+        source={getTypeImage} 
     />}
 
 export default Logo

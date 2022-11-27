@@ -1,10 +1,11 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
+import { RegisterTemplate } from '../../components/atomic/templates/Register'
 
 const RegisterPage = () =>{
     return (
         <View>
-            <Text>Tela de Registro</Text>
+           <RegisterTemplate/>
         </View>
     )
 }

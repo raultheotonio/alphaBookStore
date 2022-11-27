@@ -1,12 +1,12 @@
 import React from 'react'
 import { View } from 'react-native'
-import Login from '../../components/atomic/organisms/Login'
+import { LoginnTemplate } from '../../components/atomic/templates/Login'
 import { styles } from './styles'
 
 const LoginPage = () => {
     return (
         <View style={styles.container}>
-            <Login/>
+            <LoginnTemplate />
         </View>
     )
 }

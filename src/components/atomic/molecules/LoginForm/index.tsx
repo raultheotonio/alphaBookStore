@@ -1,15 +1,25 @@
 import React, { useState} from 'react'
 import { useNavigation } from '@react-navigation/native'
-import { Image, View, TextInput, Text, TouchableOpacity } from 'react-native'
+import { View, TextInput, Text, TouchableOpacity } from 'react-native'
 import { Button } from '../../atoms/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faXmarkCircle } from '@fortawesome/free-solid-svg-icons/faXmarkCircle'
 import { styles } from './styles'
+import { Input } from '../../atoms/Input'
 
 export const LoginForm = () => {
     const navigation = useNavigation()
     const [ email, setEmail ] = useState('')
     const [ password, setPassword ] = useState('')
+
+    const form = () => {
+        return (
+            <>
+                <Input description='Email' value={email} setValue={setEmail} type={'default'} />
+                <Input description='password' value={password} setValue={setPassword}  type={'Password'}/>
+            </>
+        )
+    }
 
     const InputEmail = () => {
         return (
@@ -62,17 +72,21 @@ export const LoginForm = () => {
                 {InputEmail()}
                 {InputPassword()}
 
-                <Button text={'Login in'} 
-                    color={'#FFF'} 
+                <Button text={'Login in'}
                     backgroundColor={'#EB5757'}
                     onPress={()=> {} } />
-
-                <TouchableOpacity
-                    activeOpacity={.7} 
-                    onPress={()=> navigation.push('Welcome')}
-                    >
-                        <Text style={styles.label}>{`Don’t have an account yet? Sign up here`}</Text>
-                </TouchableOpacity>
+                <View
+                    style={styles.link}
+                >
+                    <Text>{`Don’t have an account yet?`}</Text>
+                    <TouchableOpacity
+                        activeOpacity={.7} 
+                        onPress={()=> navigation.push('Register')}
+                        >
+                            <Text style={styles.label}>{` Sign up here`}</Text>
+                    </TouchableOpacity>
+                </View>
+                
             </View>
         )
 }

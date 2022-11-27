@@ -4,14 +4,15 @@ import { styles } from './styles'
 
 interface IProps {
     text: String,
-    color: '#EB5757' | '#FFF',
     backgroundColor: '#EB5757' | '#FFF',
     onPress: () => void
 }
 
-export const Button = ({ text, color, backgroundColor, onPress }:IProps) => {
+export const Button = ({ text, backgroundColor, onPress }:IProps) => {
     const getColorButton = backgroundColor === '#EB5757' ?  styles.buttonRedColor : styles.buttonWhiteColor
-        
+    
+    const getColorText = backgroundColor === '#EB5757' ? '#FFF' : '#EB5757'
+    
     return (
         <TouchableOpacity 
             activeOpacity={.7}
@@ -19,7 +20,7 @@ export const Button = ({ text, color, backgroundColor, onPress }:IProps) => {
             onPress={onPress}
         >
         
-            <Text style={{color: color, fontFamily: 'Poppins-Regular'}}>{text}</Text>
+            <Text style={{...styles.text, color: getColorText }}>{text}</Text>
         </TouchableOpacity>
     )
 }
