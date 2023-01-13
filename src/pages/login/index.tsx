@@ -1,14 +1,14 @@
-import React from 'react'
-import { View } from 'react-native'
-import { LoginnTemplate } from '../../components/atomic/templates/Login'
-import { styles } from './styles'
+import React from 'react';
+import { View } from 'react-native';
+import { LoginTemplate } from '../../components/atomic/templates/Login';
+import { styles } from './styles';
 
 const LoginPage = () => {
-    return (
-        <View style={styles.container}>
-            <LoginnTemplate />
-        </View>
-    )
-}
+  return (
+    <View style={styles.container}>
+      <LoginTemplate />
+    </View>
+  );
+};
 
-export default LoginPage
+export default LoginPage;
