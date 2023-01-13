@@ -1,6 +1,6 @@
 ALPHABOOK
 
-> Este aplicavito foi criado com objetivo de estudar os principais recursos para os desenvolvimento mobile,
+> Este aplicavito foi criado com objetivo de estudar os principais recursos para os desenvolvimento mobile.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -18,7 +18,7 @@ yarn start:ios
 
 ## API
 
-> Utilizada a API da bookinfo para coletar as informações dos livros,
+> Como backend está sendo utilizado a API da bookinfo para coletar as informações dos livros,
 > para saber mais clique [AQUI](https://api.mercadoeditorial.org/documentacao/v1.2#introducao)
 
 <!-- Markdown link & img dfn's -->
