@@ -1,5 +1,6 @@
 ALPHABOOK
-> Projeto para fins de estudo
+
+> Este aplicavito foi criado com objetivo de estudar os principais recursos para os desenvolvimento mobile,
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -8,10 +9,20 @@ ALPHABOOK
 ## Installation
 
 ```sh
-yarn && yarn android
+yarn start:android
 ```
 
+```sh
+yarn start:ios
+```
+
+## API
+
+> Utilizada a API da bookinfo para coletar as informações dos livros,
+> para saber mais clique [AQUI](https://api.mercadoeditorial.org/documentacao/v1.2#introducao)
+
 <!-- Markdown link & img dfn's -->
+
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
